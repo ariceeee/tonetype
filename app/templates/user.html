@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block header %}ToneType|Account{% endblock %}
+{% block body %}
+
+<form action="/user/logout/" method="post" target="_self">
+    <input type="submit" value="logout">
+    <input type="submit" value="change password">
+    <input type="submit" value="delete account">
+</form>
+
+<a href="/">home</a>
+{% endblock %}
